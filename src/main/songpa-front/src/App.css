@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.blog {
+  background-color: #61dafb;
+  display: flex;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}

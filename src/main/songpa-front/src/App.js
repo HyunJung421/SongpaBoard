@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Layout from './components/layout/Layout.jsx';
 import { useEffect, useState } from "react";
 
 function App() {
-    const [message, setMessage] = useState([]);
-
-    useEffect(() => {
-        fetch("/hello")
-            .then((response) => {
-                return response.json();
-            })
-            .then(function (data) {
-                setMessage(data);
-            });
-    }, []);
+    // const [message, setMessage] = useState([]);
+    // useEffect(() => {
+    //     fetch("/hello")
+    //         .then((response) => {
+    //             return response.json();
+    //         })
+    //         .then(function (data) {
+    //             setMessage(data);
+    //         });
+    // }, []);
 
     return (
         <div className="App">
-            <header className="App-header">
+            <Layout>
+                <nav>
+                    <div className='blog'>Blog</div>
+                </nav>
+            </Layout>
+            {/* <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
                     Edit <code>src/App.js</code> and save to reload.
@@ -30,10 +35,11 @@ function App() {
                 >
                     Learn React
                 </a>
-                <ul>
-                    {message.map((text, index) => <li key={`${index}-${text}`}>{text}</li>)}
-                </ul>
-            </header>
+            </header> */}
+
+            {/* <ul>
+                {message.map((text, index) => <li key={`${index}-${text}`}>{text}</li>)}
+            </ul> */}
         </div>
     );
 }
