@@ -38,9 +38,10 @@
 }
 
 .blog {
-  background-color: #61dafb;
+  background-color: yellowgreen;
   display: flex;
   color: white;
   padding: 20px;
   width: 100%;
+  justify-content: center;
 }
