@@ -20,7 +20,7 @@ function App() {
             <Layout>
                 <nav>
                     <div className='blog'>
-                        <img src={logo} className="App-logo" alt="logo" />
+                        {/* <img src={logo} className="App-logo" alt="logo" /> */}
                         <ul>
                             {message.map((text, index) => <li key={`${index}-${text}`}>{text}</li>)}
                         </ul>

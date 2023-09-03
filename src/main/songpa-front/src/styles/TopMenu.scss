@@ -10,6 +10,11 @@
     margin-top: 10px;
 }
 
+.top-logo {
+    width: calc(100% /3);
+    padding: 10px;
+}
+
 .submenu {
     // 기본 Tabmenu 에 대한 CSS를 구현
     display: flex;
